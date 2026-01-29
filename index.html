@@ -20,12 +20,6 @@
         }
         .main-project-title {
             word-break: keep-all;
-            white-space: nowrap;
-        }
-        @media (max-width: 1024px) {
-            .main-project-title {
-                white-space: normal;
-            }
         }
         /* 애니메이션 아이콘 효과 */
         @keyframes float {
@@ -53,8 +47,7 @@
                 <div class="mt-2">
                     <h2 class="text-xl md:text-2xl font-bold text-slate-800 mb-4">유튜브·SNS 반응 분석을 통한 관광객 맞춤형 맛집/명소 큐레이션</h2>
                     <p class="text-base md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                        데이터 분석을 통한 객관적인 인사이트로 <br>
-                        부산의 <span class="text-blue-600 font-bold underline">진짜 가치</span>를 새롭게 정의합니다.
+                        데이터 분석을 통한 객관적인 인사이트로 부산의 <span class="text-blue-600 font-bold underline">진짜 가치</span>를 새롭게 정의합니다.
                     </p>
                 </div>
             </div>
@@ -65,7 +58,7 @@
     <section id="services" class="py-8 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="grid md:grid-cols-3 gap-6 lg:gap-10">
-                <!-- 카드 1: 웹사이트 (제공해주셨던 외부 링크로 연결) -->
+                <!-- 카드 1: 웹사이트 -->
                 <a href="https://copy-of-busan-real-discovery-555344686657.us-west1.run.app/" target="_blank" class="card-hover group bg-slate-50 rounded-[32px] p-10 text-center transition-all border border-transparent hover:border-blue-200 flex flex-col items-center shadow-sm">
                     <div class="w-24 h-24 bg-white shadow-xl shadow-blue-100 rounded-[24px] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -73,16 +66,15 @@
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4 group-hover:text-blue-600 transition-colors">웹사이트</h3>
-                    <p class="text-slate-500 text-base leading-relaxed mb-6">
-                        수집된 방대한 관광 데이터를 <br>
-                        실시간으로 시각화하여 제공하는 웹사이트입니다.
+                    <p class="text-slate-500 text-base leading-relaxed mb-6 break-keep">
+                        수집된 방대한 관광 데이터를 실시간으로 시각화하여 제공하는 웹사이트입니다.
                     </p>
                     <div class="px-6 py-2 bg-blue-100 text-blue-700 rounded-full font-bold group-hover:bg-blue-600 group-hover:text-white transition-all text-sm">
                         웹사이트 열기
                     </div>
                 </a>
 
-                <!-- 카드 2: 스토리북 (외부 공유 링크로 연결) -->
+                <!-- 카드 2: 스토리북 -->
                 <a href="https://gemini.google.com/share/245e96c59925" target="_blank" class="card-hover group bg-slate-50 rounded-[32px] p-10 text-center transition-all border border-transparent hover:border-sky-200 flex flex-col items-center shadow-sm">
                     <div class="w-24 h-24 bg-white shadow-xl shadow-sky-100 rounded-[24px] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-sky-500 group-hover:text-white transition-all duration-500">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -90,17 +82,16 @@
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4 group-hover:text-sky-600 transition-colors">스토리북</h3>
-                    <p class="text-slate-500 text-base leading-relaxed mb-6">
-                        데이터로 쓰는 'Global Busan' 가이드를 활용하여 <br>
-                        여행한 외국인 가족의 관광 <br> 이야기입니다.
+                    <p class="text-slate-500 text-base leading-relaxed mb-6 break-keep">
+                        데이터로 쓰는 'Global Busan' 가이드를 활용하여 여행한 외국인 가족의 관광 이야기입니다.
                     </p>
                     <div class="px-6 py-2 bg-sky-100 text-sky-700 rounded-full font-bold group-hover:bg-sky-500 group-hover:text-white transition-all text-sm">
                         스토리북 읽기
                     </div>
                 </a>
 
-                <!-- 카드 3: 애니메이션 (3.html.mp4로 연결) -->
-                <a href="3.html.mp4" class="card-hover group bg-slate-50 rounded-[32px] p-10 text-center transition-all border border-transparent hover:border-indigo-200 flex flex-col items-center shadow-sm">
+                <!-- 카드 3: 애니메이션 -->
+                <a href="3.html.mp4" target="_blank" class="card-hover group bg-slate-50 rounded-[32px] p-10 text-center transition-all border border-transparent hover:border-indigo-200 flex flex-col items-center shadow-sm">
                     <div class="w-24 h-24 bg-white shadow-xl shadow-indigo-100 rounded-[24px] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-500">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 animate-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
@@ -108,9 +99,8 @@
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4 group-hover:text-indigo-600 transition-colors">애니메이션</h3>
-                    <p class="text-slate-500 text-base leading-relaxed mb-6">
-                        외국인 가족의 <br>
-                        부산 관광 이야기를 <br> 애니메이션으로도 만나보세요.
+                    <p class="text-slate-500 text-base leading-relaxed mb-6 break-keep">
+                        외국인 가족의 부산 관광 이야기를 애니메이션으로도 만나보세요.
                     </p>
                     <div class="px-6 py-2 bg-indigo-100 text-indigo-700 rounded-full font-bold group-hover:bg-indigo-600 group-hover:text-white transition-all text-sm">
                         애니메이션 보기
